@@ -1,0 +1,125 @@
+body{background-color: aliceblue;}
+
+img{width: 100%; display: block;}
+div.imgframe{
+    border: inset 20px crimson;
+    width: 700px;
+    margin: auto;
+    position: relative;
+}
+
+.imgtitle{
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(214, 241, 223);
+}
+
+/* z-index */
+.imgframe2{
+    border: inset 20px crimson;
+    width: 700px;
+    margin: auto;
+    position: relative;
+}
+
+.imgtitle2{
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    right: 10%;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(214, 241, 223, 0.75);
+}
+
+.imgparag{
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 40%;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.imglink{
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 40%;
+    right: 40%;
+    color: brown;
+    padding: 10px 20px;
+    background-color:whitesmoke;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.imglink:hover{
+    background-color: rgb(196, 167, 223);
+    box-shadow: 2px 2px 5px black;
+}
+
+/* CARD */
+.sectioncard{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
+    transition: ease-in-out 200ms;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    cursor:pointer;
+}
+
+.cardlink{
+    color:crimson;
+    font-weight: 900; 
+    text-decoration: none;
+    background-color: white;
+    padding: 12px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: ease-in-out 200ms;
+    display: none; 
+}
+
+.cardinfo{
+    padding:12px;
+}
+
+.cardlink:hover{
+    background-color: skyblue;
+    color:aqua;
+}
+
+.card:hover .cardlink{
+    display: inline;
+}
+
+.portraitcard{
+    position: relative;
+}
+
+.portraitinfo{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+}

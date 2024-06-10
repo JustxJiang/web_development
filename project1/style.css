@@ -1,0 +1,129 @@
+.body{
+    background-color: #FDF5DF;
+    padding-top: 5em;
+}
+
+.navigation{
+    background-color: #5EBEC4;
+}
+.top{
+    display: relative;
+    overflow: hidden;
+}
+.main_img{
+    position: relative;
+}
+
+.main{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+main h2{
+    color:#c9226a;
+}
+
+.flashcard_1{
+    margin-left: 5em;
+    width: 30%;
+    border-radius: 20px;
+    transition: ease-in-out 200ms;
+    box-shadow: 1px 2px 5px gray;
+}
+
+.flashcard{
+    border-radius: 20px;
+    transition: ease-in-out 200ms;
+    box-shadow: 1px 2px 5px gray;
+}
+
+.flashcard_1:hover{
+    transform: scale(1.02);
+}
+
+.flashcard:hover{
+    transform: scale(1.02);
+}
+
+.main_info{
+    width:60%;
+    text-align: center;
+}
+
+.side_info{
+    width:40%;
+}
+
+.menu{
+    color:#c9226a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.overlay{
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    left: 5%;
+    top: 35%;
+    font-family: fantasy;
+    animation: fadein 2s ease-in-out;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.footer{
+    background-color: #5EBEC4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 20px;
+}
+
+.footer h2{
+    color: #c9226a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.column{
+    width: 33%;
+    text-align: center;
+}
+
+.icon{
+    width: 50px;
+    padding: 5px;
+    display: inline;
+    opacity: 0.8;
+}
+
+.icon:hover{
+    opacity: 1;
+}
+
+.contact{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+}
+
+@media only screen and (max-width: 1355px) {
+
+    .overlay{
+        top:10%;
+        background-color: lightgray;
+        opacity: 0.5;
+    }
+
+    
+}

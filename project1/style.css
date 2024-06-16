@@ -80,6 +80,32 @@ main h2{
     }
 }
 
+.learn_more{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    background-color: lightgray;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.learn_more:hover{
+    opacity: 1;
+}
+
+.form_detail{
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.submit{
+    opacity: 0.75;
+}
+
+.submit:hover{
+    opacity: 1;
+}
+
 
 .footer{
     background-color: #5EBEC4;

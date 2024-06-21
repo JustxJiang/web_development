@@ -47,7 +47,8 @@
      <button class = "btnscrollright">scroll right</button>
 
      <!-- slice photo gallery -->
-     <section class = "maincontainer">
+    <h2>Slice photo gallery</h2>
+    <section class = "maincontainer">
         <div class = "gallerycontainer">
             <img class = "galleryimage" src="pic1.jpg" alt="image 1">
             <img class = "galleryimage" src="pic2.jpg" alt="image 2">
@@ -56,11 +57,42 @@
         </div>
         <button class = "btnleft">&#x276E;</button>
         <button class = "btnright">&#x276F;</button>
-     </section>
+    </section>
 
-     <div class = "gotop">
+    <div class = "gotop">
         <a href=""><span>&#11161;</span></a>
-     </div>
+    </div>
+
+    <!-- Thursday, June 20 -->
+     <h2>Form events</h2>
+    <form id = "myform">
+        <div class = "controlblock">
+            <label for = "username">Enter a username</label>
+            <input type="text" id = "username" placeholder = "Type username...">
+        </div>
+        
+
+        <div class = "controlblock">
+            <label for="passwordfield">Password</label>
+            <input type="password" id = "passwordfield"  placeholder="Enter a password" required>
+            <p class = "passwordmsg">Must be 8+ characters</p>
+            <div class = "passworderror"></div>
+        </div>
+
+        <!-- comments feedback 50+ characters and less than 2000 characters -->
+        <div class = "controlblock">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" rows = "20" cols = "100" placeholder="No more than 2000 characters, No less than 50 characters"></textarea>
+            <div class = "commentserror"></div>
+        </div>
+
+        <button type = "submit" class = "submitbtn">Submit</button>
+    </form>
+
+    <!-- Display message -->
+    <div class = "greeting">
+        <p>Welcome to form events <span></span></p>
+    </div>
 
     <script src = "script.js"></script>
 </body>

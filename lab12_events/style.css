@@ -64,7 +64,7 @@
 }
 
 .gallerycontainer{
-    position: absolute;
+    position: relative;
     z-index: 1;
     overflow-x: scroll; 
     white-space: nowrap;
@@ -127,3 +127,45 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* Thursday, June 20 */
+.greeting{
+    display: none;
+}
+
+#myform{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 10px;
+    width: 1000px; 
+    margin: 50px auto;
+}
+
+.controlblock{
+    margin-bottom: 20px; 
+}
+
+.passwordmsg{
+    color: gray; 
+    margin-top: -1px;
+}
+
+.passworderror{
+    margin-top: -5px;
+    color: red
+}
+.submitbtn{
+    background-color: red;
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    border: none;
+    color: aliceblue;
+}
+
+.submitbtn:hover{
+    transform: translateY(5px);
+    cursor: pointer;
+    background-color: black;
+    box-shadow: -2px 0px 3px gray;   
+}
+

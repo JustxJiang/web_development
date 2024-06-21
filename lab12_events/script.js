@@ -115,3 +115,79 @@ window.addEventListener("scroll", function(e){
         gotop.style.display = "none"
     }
 })
+
+/**
+ * Thursday, June 20
+ */
+/* FORM EVENTS */
+/* input events */
+// get referemce to the form elements 
+const myform = document.querySelector("#myform")
+const greeting = document.querySelector(".greeting")
+const greetingname = document.querySelector(".greeting p span")
+
+myform.addEventListener("submit", function(event){
+    // prevent the default form submission behavior 
+    event.preventDefault()
+
+    // start form validation, username 
+    const usernameinput = document.querySelector("#username")
+    // collect the input text value
+    const username = usernameinput.value
+    // validation 1: make sure the user types a username before pressing the submit button
+    if (username.trim() == ""){
+        alert("Please enter a username")
+        return; // stop further execution
+    }
+
+    // if the validation passed, you can submit the data to the server
+    // greeting message after the validation
+    greetingname.innerHTML = username 
+    greeting.style.display = "block"
+    // after the form is submitted, we can clear the username 
+    usernameinput.value = ""
+})
+
+/**
+ * password validation
+ */
+// collect form elements
+const passwordfield = document.querySelector("#passwordfield")
+const submitbtn = document.querySelector(".submitbtn")
+// collect the password error message element
+const passworderror = document.querySelector(".passworderror")
+
+// disabled button when load the window
+window.addEventListener("load", function(){
+    submitbtn.disabled = true
+    submitbtn.style.backgroundColor = "lightgray"
+})
+
+passwordfield.addEventListener("input", function(){
+    let numbercharacter = passwordfield.value.length
+    if(numbercharacter < 8){
+        passworderror.textContent = "Password must be 8+ characters"
+        passworderror.style.color = "red";
+    }
+    else{
+        passworderror.innerHTML = "&#x2713;"
+        passworderror.style.color = "green"
+        passwordfield.style.border = "solid 2px green";
+    }
+})
+
+
+// Exercise 
+const comments = document.querySelector("#comments")
+const commentserror = document.querySelector(".commentserror")
+comments.addEventListener("input", function(){
+    let numbercomments = comments.value.length
+    if (numbercomments < 50){
+        commentserror.textContent = "Must be 50+ characters"
+        commentserror.style.color = "red"
+    }
+    else{
+        comments.style.border = "solid 2px green"
+        commentserror.textContent = ""
+    }
+})

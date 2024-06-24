@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temporary Storage</title>
+</head>
+<body>
+    <h1>Temporary Storage</h1>
+    <form class = "myform" action = "display.html">
+        <fieldset>
+            <legend>Survey</legend>
+            <div class = "controlblock">
+                <label for="firstname">First name: </label>
+                <input type="text" name = "username" id = "firstname">                
+            </div>
+            
+            <div class = "controlblock">
+                <p>Please select your favorite Web language: </p>
+                <label for="html">HTML</label>
+                <input type="radio" name = "fav_language" id = "html" value = "Hypertext Markup Language, HTML">
+                <label for="css">CSS</label>
+                <input type="radio" name = "fav_language" id = "css" value = "Cascading Style Sheet, CSS">
+                <label for="js">JavaScript</label>
+                <input type="radio" name = "fav_language" id = "js" value = "Javascript, JS">
+            </div>
+
+            <div class = "controlblock">
+                <input type="submit" value = "Submit Survey">
+            </div>
+        </fieldset>
+    </form>
+
+    <div class = "displayresult"></div>
+
+    <h1>Transfer item to the cart</h1>
+    <div class = "container">
+        <section class = "item1">
+            <img src="bath1.jpg" alt="imgitem1" class = "imgitem1">
+            <p class = "itemname">Ridgeline</p>
+            <p class = "itemdescription">3-in-1 Hair, Face & Body Wash</p>
+            <p class = "price"><s>$14.95</s> $<b class = "saleprice">3.73</b></p>
+            <form action="cart.html" class = "formitem1">
+                <label for="quantityitem1">Quantity</label>
+                <input type = "number" name = "item1quantity" id = "quantityitem1" max = "10" min = "0" class = "quantityinput">
+                <input type = "submit" value = "Add to Cart" class = "item1btn">
+            </form>
+        </section>        
+    </div>
+
+
+    <script src = "storage.js"></script>
+</body>
+</html>

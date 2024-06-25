@@ -51,6 +51,9 @@ img{width: 100%;}
     text-align: center;
 }
 
+.bagcontainer h2{
+    background-color: aliceblue;
+}
 .itemimg{
     width: 30%;
 }

@@ -32,11 +32,6 @@ img{width: 100%;}
     font-size: 1.3em; 
 }
 
-.itemdescription{
-    color: darkslategray;
-    margin-top: -10px;
-}
-
 .item1btn{
     display: block;
     background-color: darkslategray;
@@ -53,6 +48,7 @@ img{width: 100%;}
     border: solid 1px black;
     display: flex;
     flex-wrap: nowrap;
+    text-align: center;
 }
 
 .itemimg{

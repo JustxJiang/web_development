@@ -23,17 +23,17 @@ myform.addEventListener("submit",function(event){
 /* SHOPPING CART */
 // collect the elements
 const formitem1 = document.querySelector(".formitem1")
-const itemname = document.querySelector(".itemname")
-const itemdescription = document.querySelector(".itemdescription")
-const imgitem1 = document.querySelector(".imgitem1")
-const saleprice = document.querySelector(".saleprice")
+const itemname = document.querySelector(".itemname").textContent
+const itemdescription = document.querySelector(".itemdescription_home").textContent
+const imgitem1 = document.querySelector(".imgitem1").getAttribute('src')
+const saleprice = document.querySelector(".saleprice").textContent
 formitem1.addEventListener("submit", function(){
     // collect the quantity 
     const quantityitem1 = document.querySelector(".quantityinput").value
     // set data into sessionStorage
     sessionStorage.setItem('quantityitem1', quantityitem1)
-    sessionStorage.setItem('itemname1', itemname.textContent)
-    sessionStorage.setItem('itemdescription', itemdescription.textContent)
+    sessionStorage.setItem('itemname1', itemname)
+    sessionStorage.setItem('itemdescription', itemdescription)
     sessionStorage.setItem('imgitem1', imgitem1)
-    sessionStorage.setItem('saleprice', saleprice.textContent)
+    sessionStorage.setItem('saleprice', saleprice)
 })

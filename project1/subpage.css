@@ -9,10 +9,11 @@
 }
 .sub_container{
     display: flex;
-    height:50vh;
+    height:100vh;
     width:100%;
+    overflow:auto;
     text-align: center;
-    
+    flex-wrap: wrap;
 }
 
 .text_section h1{
@@ -23,6 +24,7 @@
 .image_section, .text_section{
     flex:1;
 }
+
 
 .image_section img{
     width: 100%; 

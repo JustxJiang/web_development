@@ -1,0 +1,177 @@
+.header{
+    display: flex;
+    background-color: #edddd4;
+}
+
+.title_text{
+    color: #c44536;
+    font-family: cursive;
+}
+
+.navigation{
+    background-color: #edddd4;
+}
+
+.title{
+    position: absolute;
+    background-color: #283d3b;
+    width: 50%;
+    text-align: center;
+    opacity: 80%;
+    border-radius: 20px;
+    top: 40%;
+    left: 25%;
+}
+
+.body{
+    padding-top: 7em;
+    color: whitesmoke;
+    flex-wrap: wrap;
+}
+
+.main_img{
+    position: relative;
+    height: 75vh;
+    width: 100%;
+}
+
+.separator{
+    color: #197278;
+}
+
+.logo{
+    width: 150px;
+}
+
+.menu{
+    font-weight: bold;
+    height: 50px;
+}
+
+.menu img{
+    position: relative;
+    top: -6px; 
+    width: 35px;
+}
+
+.menu:hover{
+    background-color: #772e25;
+}
+
+
+/* CARDS */
+
+
+.card{
+    background-color: #edddd4;
+    width: 30%;
+    text-align: center;
+}
+
+.card img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.na{
+    opacity: 0;
+    transition: ease-in-out 375ms;
+    bottom: 0%;
+    left: 23%;
+    position: absolute;
+    color: whitesmoke;
+}
+
+.eu{
+    opacity: 0;
+    transition: ease-in-out 375ms;
+    bottom: 0%;
+    left: 37%;
+    position: absolute;   
+    color: whitesmoke;
+}
+
+.asia{
+    opacity: 0;
+    transition: ease-in-out 375ms;
+    bottom: 0%;
+    left: 43%;
+    position: absolute;   
+    color: whitesmoke;
+}
+
+.sa{
+    opacity: 0;
+    transition: ease-in-out 375ms;
+    bottom: 0%;
+    left: 23%;
+    position: absolute;   
+    color: whitesmoke;
+}
+.africa{
+    opacity: 0;
+    transition: ease-in-out 375ms;
+    bottom: 0%;
+    left: 39%;
+    position: absolute;   
+    color: whitesmoke;
+}
+.oceania{
+    opacity: 0;
+    transition: ease-in-out 375ms;
+    bottom: 0%;
+    left: 35%;
+    position: absolute;   
+    color: whitesmoke;
+}
+
+.card:hover{
+    h2{
+        opacity: 1;
+        transform: translateY(-5.5em);
+    }
+
+    img{
+        opacity: 0.5;
+    }
+
+    background-color: rgba(25, 114, 120, 0.8);
+}
+
+.footer{
+    background-color: #edddd4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+.footer h2{
+    color: #772e25;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.column{
+    width: 33%;
+    text-align: center;
+}
+
+.icon{
+    width: 50px;
+    padding: 5px;
+    display: inline;
+    opacity: 0.8;
+}
+
+.icon:hover{
+    opacity: 1;
+}
+
+.contact{
+    color: #c44536;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+}
